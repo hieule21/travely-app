@@ -1,9 +1,6 @@
 package io.hieule.travelyapp.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -21,5 +18,5 @@ public class User {
     private String firstName;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private Collection<travelEntity> travelEntities;
+    private Collection<TravelEntity> travelEntities;
 }

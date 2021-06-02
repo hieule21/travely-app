@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Data
-public class travelEntity {
+public class TravelEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
