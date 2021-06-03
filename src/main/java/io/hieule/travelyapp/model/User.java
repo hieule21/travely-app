@@ -19,7 +19,4 @@ import java.util.Collection;
 public class User extends BaseEntity{
     private String lastName;
     private String firstName;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private Collection<TravelEntity> travelEntities;
 }
