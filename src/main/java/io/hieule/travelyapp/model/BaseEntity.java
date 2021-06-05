@@ -1,5 +1,6 @@
 package io.hieule.travelyapp.model;
 
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -13,6 +14,7 @@ import java.time.Instant;
  * Created by Hieu Le on 6/2/2021
  */
 @MappedSuperclass
+@Data
 public abstract class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
